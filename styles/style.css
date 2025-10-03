@@ -74,6 +74,10 @@ header {
         display: flex;
         justify-content: space-between;
 
+        @media (max-width: 450px) {
+            flex-direction: column;
+        }
+
         a {
             font-family: var(--font-family);
             font-weight: 600;
@@ -133,6 +137,10 @@ header {
     display: flex;
     justify-content: space-between;
 
+    @media (max-width: 1000px) {
+        flex-direction: column;
+    }
+
     .me_text {
         color: var(--text-color);
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -151,6 +159,10 @@ header {
                 display: flex;
                 flex-wrap: wrap;
                 gap: 1em;
+
+                @media (max-width: 1000px) {
+                    margin-bottom: 2em;
+                }
 
                 li {
                     background: var(--text-color);
@@ -178,6 +190,7 @@ header {
 
         img {
             max-width: 580px;
+            width: 100%;
         }
     }
 }
@@ -188,6 +201,10 @@ footer {
     menu {
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: 450px) {
+            flex-direction: column;
+        }
 
         a {
             font-family: var(--font-family);
