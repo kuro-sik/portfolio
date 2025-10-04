@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Закрытие при клике вне меню
     document.addEventListener('click', (e) => {
         if (!menu.contains(e.target) && !Array.from(toggles).some(t => t.contains(e.target))) {
             menu.classList.remove('active');
